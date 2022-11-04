@@ -20,7 +20,7 @@ public class Main {
             System.out.print(b + " ");
         }
         System.out.println(" ");
-        // Деммографическая задача
+        // Демографическая задача
         int populationY = 12_000_000;
         int years = 0;
         int born = 17;
@@ -29,6 +29,25 @@ public class Main {
             populationY = populationY + born*(populationY/1000) - dead*(populationY/1000);
             years = years + 1;
             System.out.println("Год " + years + ", численность населения составляет " + populationY);
+        }
+        // Накопления Василия
+        // # 1
+        int diposit1 = 15000;
+        int b  = 0;
+        while (diposit1 < 12_000_000) {
+            diposit1 = diposit1 + (diposit1 / 100 * 7);
+            b = b + 1;
+            System.out.println(b + " месяц сумма накоплений " + diposit1);
+        }
+        // # 2
+        int diposit2 = 15_000;
+        int month  = 0;
+        while (diposit2 < 12_000_000) {
+            diposit2 = diposit2 + (diposit2/100*7);
+            month = month + 1;
+            if (month % 6 == 0) {
+                System.out.println (month + " месяц сумма накоплений " + diposit2);
+            }
         }
     }
 }
