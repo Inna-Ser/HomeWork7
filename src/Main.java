@@ -49,5 +49,23 @@ public class Main {
                 System.out.println (month + " месяц сумма накоплений " + diposit2);
             }
         }
+        // # 3
+        int diposit3 = 15_000;
+        int d  = 0;
+        while (d < 108) {
+            diposit3 = diposit3 + (diposit3 / 100 * 7);
+            d = d + 1;
+            if (d % 6 == 0) {
+                System.out.println(d + " месяц сумма накоплений " + diposit3);
+            }
+        }
+        // Отчеты по пятницам
+        int friday = 2; {
+            System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет.");
+        }
+        while (friday < 24) {
+            friday = friday + 7;
+            System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет.");
+        }
     }
 }
