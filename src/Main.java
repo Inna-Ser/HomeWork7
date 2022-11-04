@@ -78,5 +78,10 @@ public class Main {
                 System.out.println(year);
             }
         }
+        // Таблица умножения
+        for (int c = 1; c <= 10; c++) {
+            int produkt = c*2;
+            System.out.println("2 * " + c + " = " + produkt);
+        }
     }
 }
