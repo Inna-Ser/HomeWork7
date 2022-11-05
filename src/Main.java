@@ -2,22 +2,22 @@ public class Main {
     public static void main(String[] args) {
         int deposit = 15_000;
         int total = 0;
-        int i = 0;
+        int monthSave = 0;
         while (total < 2_459_000) {
             total = total + total / 100;
             total = total + deposit;
-            i = i + 1;
-            System.out.println("Месяц " + i + ", сумма накоплений равна " + total + " рублей.");
+            monthSave = monthSave + 1;
+            System.out.println("Месяц " + monthSave + ", сумма накоплений равна " + total + " рублей.");
         }
         // Строка цыфр
-        int x = 0;
-        while (x < 10) {
-            x = x + 1;
-            System.out.print(x + " ");
+        int num = 0;
+        while (num < 10) {
+            num = num + 1;
+            System.out.print(num + " ");
         }
         System.out.println(" ");
-        for (int b = 10; b > 0; b--) {
-            System.out.print(b + " ");
+        for (int num1 = 10; num1 > 0; num1--) {
+            System.out.print(num1 + " ");
         }
         System.out.println(" ");
         // Демографическая задача
@@ -33,11 +33,11 @@ public class Main {
         // Накопления Василия
         // # 1
         int diposit1 = 15000;
-        int b  = 0;
+        int numberMonth  = 0;
         while (diposit1 < 12_000_000) {
             diposit1 = diposit1 + (diposit1 / 100 * 7);
-            b = b + 1;
-            System.out.println(b + " месяц сумма накоплений " + diposit1);
+            numberMonth = numberMonth + 1;
+            System.out.println(numberMonth + " месяц сумма накоплений " + diposit1);
         }
         // # 2
         int diposit2 = 15_000;
@@ -51,12 +51,12 @@ public class Main {
         }
         // # 3
         int diposit3 = 15_000;
-        int d  = 0;
-        while (d < 108) {
+        int monthNumber  = 0;
+        while (monthNumber < 108) {
             diposit3 = diposit3 + (diposit3 / 100 * 7);
-            d = d + 1;
-            if (d % 6 == 0) {
-                System.out.println(d + " месяц сумма накоплений " + diposit3);
+            monthNumber = monthNumber + 1;
+            if (monthNumber % 6 == 0) {
+                System.out.println(monthNumber + " месяц сумма накоплений " + diposit3);
             }
         }
         // Отчеты по пятницам
@@ -79,9 +79,9 @@ public class Main {
             }
         }
         // Таблица умножения
-        for (int c = 1; c <= 10; c++) {
-            int produkt = c*2;
-            System.out.println("2 * " + c + " = " + produkt);
+        for (int multiplicand = 1; multiplicand <= 10; multiplicand++) {
+            int produkt = multiplicand*2;
+            System.out.println("2 * " + multiplicand + " = " + produkt);
         }
     }
 }
