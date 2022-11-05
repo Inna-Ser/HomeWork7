@@ -26,14 +26,14 @@ public class Main {
         int born = 17;
         int dead = 8;
         while (years < 10) {
-            populationY = populationY + born*(populationY/1000) - dead*(populationY/1000);
+            populationY = populationY + born * (populationY / 1000) - dead * (populationY / 1000);
             years = years + 1;
             System.out.println("Год " + years + ", численность населения составляет " + populationY);
         }
         // Накопления Василия
         // # 1
         int diposit1 = 15000;
-        int numberMonth  = 0;
+        int numberMonth = 0;
         while (diposit1 < 12_000_000) {
             diposit1 = diposit1 + (diposit1 / 100 * 7);
             numberMonth = numberMonth + 1;
@@ -41,17 +41,17 @@ public class Main {
         }
         // # 2
         int diposit2 = 15_000;
-        int month  = 0;
+        int month = 0;
         while (diposit2 < 12_000_000) {
-            diposit2 = diposit2 + (diposit2/100*7);
+            diposit2 = diposit2 + (diposit2 / 100 * 7);
             month = month + 1;
             if (month % 6 == 0) {
-                System.out.println (month + " месяц сумма накоплений " + diposit2);
+                System.out.println(month + " месяц сумма накоплений " + diposit2);
             }
         }
         // # 3
         int diposit3 = 15_000;
-        int monthNumber  = 0;
+        int monthNumber = 0;
         while (monthNumber < 108) {
             diposit3 = diposit3 + (diposit3 / 100 * 7);
             monthNumber = monthNumber + 1;
@@ -60,7 +60,8 @@ public class Main {
             }
         }
         // Отчеты по пятницам
-        int friday = 2; {
+        int friday = 2;
+        {
             System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет.");
         }
         while (friday < 24) {
@@ -68,19 +69,19 @@ public class Main {
             System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет.");
         }
         // Комметы
-        int year = 0;
+
         int yearPast = 2022 - 200;
-        int yearPresent = 2022;
-        while (year < yearPresent) {
-            year = year + 79;
-            if (year > yearPast)
-            {
+        int yearFuture = 2022 + 100;
+        int year = 0;
+        while (year <= yearFuture) {
+            year += 79;
+            if (year >= yearPast && year <= yearFuture) {
                 System.out.println(year);
+                }
             }
-        }
         // Таблица умножения
         for (int multiplicand = 1; multiplicand <= 10; multiplicand++) {
-            int produkt = multiplicand*2;
+        int produkt = multiplicand * 2;
             System.out.println("2 * " + multiplicand + " = " + produkt);
         }
     }
