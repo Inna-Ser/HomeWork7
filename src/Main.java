@@ -68,7 +68,7 @@ public class Main {
             friday = friday + 7;
             System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет.");
         }
-        // Комметы
+        // Кометы
 
         int yearPast = 2022 - 200;
         int yearFuture = 2022 + 100;
